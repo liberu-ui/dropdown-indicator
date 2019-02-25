@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style lang="scss">
-    .icon.angle[aria-hidden="false"] {
+    .icon.angle[aria-hidden="true"] {
         transform: rotate(180deg);
     }
 
