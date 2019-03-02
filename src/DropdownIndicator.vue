@@ -1,6 +1,6 @@
 <template>
     <span class="icon angle"
-        :aria-hidden="!expanded">
+        :aria-hidden="!open">
         <fa icon="angle-down"/>
     </span>
 </template>
@@ -13,32 +13,12 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 library.add(faAngleDown);
 
 export default {
-    model: {
-        prop: 'collapsed',
-        event: 'toggle',
-    },
+    name: 'DropdownIndicator',
 
     props: {
-        collapsed: {
+        open: {
             type: Boolean,
-            default: true,
-        },
-    },
-
-    data: v => ({
-        expanded: !v.collapsed,
-    }),
-
-    watch: {
-        collapsed(collapsed) {
-            this.expanded = !collapsed;
-        },
-    },
-
-    methods: {
-        toggle() {
-            this.expanded = !this.expanded;
-            this.$emit('toggle', this.expanded);
+            default: false,
         },
     },
 };
