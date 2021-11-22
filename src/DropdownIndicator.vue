@@ -1,6 +1,6 @@
 <template>
     <span class="icon angle"
-        :aria-hidden="!open">
+        :aria-hidden="ariaHidden">
         <fa icon="angle-down"/>
     </span>
 </template>
@@ -23,6 +23,12 @@ export default {
             default: false,
         },
     },
+
+    computed: {
+        ariaHidden() {
+            return this.open ? null : true;
+        }
+    }
 };
 </script>
 
