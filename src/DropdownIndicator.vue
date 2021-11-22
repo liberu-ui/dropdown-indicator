@@ -23,6 +23,12 @@ export default {
             default: false,
         },
     },
+
+    computed: {
+        ariaHidden() {
+            return this.open ? null : true;
+        }
+    }
 };
 </script>
 
