@@ -27,8 +27,8 @@ export default {
     computed: {
         ariaHidden() {
             return this.open ? null : true;
-        }
-    }
+        },
+    },
 };
 </script>
 
