@@ -1,5 +1,5 @@
 {
-  "name": "@cgdsoftware/dropdown-indicator",
+  "name": "@liberu-ui/dropdown-indicator",
   "version": "2.0.10",
   "description": "A simple dropdown indicator",
   "main": "index.js",
