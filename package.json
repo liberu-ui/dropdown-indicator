@@ -1,6 +1,6 @@
 {
   "name": "@liberu-ui/dropdown-indicator",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "A simple dropdown indicator",
   "main": "index.js",
   "scripts": {
